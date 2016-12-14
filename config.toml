@@ -1,0 +1,7 @@
+# Site settings
+baseurl = "https://example.org/"
+languageCode = "de-de"
+title = "Jan läuft!"
+theme = "cactus"
+[permalinks]
+  blog = "/:year/:month/:title/"
