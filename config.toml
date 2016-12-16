@@ -1,7 +1,10 @@
 # Site settings
-baseurl = "https://example.org/"
-languageCode = "de-de"
-title = "Jan läuft!"
+baseurl = "http://localhost:8080/"
+languageCode = "en"
+title = "foo bar"
 theme = "cactus"
+[taxonomies]
+  categories = "category"
+# paginate = 2
 [permalinks]
   blog = "/:year/:month/:title/"

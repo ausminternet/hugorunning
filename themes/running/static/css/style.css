@@ -1,0 +1,51 @@
+html {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+body {
+  color: #333;
+  line-height: 1.5;
+}
+
+a {
+  color: #f53e27;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.post {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+.post:not(:last-of-type) {
+  border-bottom: 1px dashed #ccc;
+}
+
+.post-title {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.post-meta {
+  margin: 0;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.post-meta,
+.post-category {
+  color: #888;
+}
