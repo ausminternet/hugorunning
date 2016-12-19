@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "http://192.168.178.30:8080/"
+baseurl = "http://janlaeuft.de"
 languageCode = "en"
 title = "foo bar"
 theme = "running"
