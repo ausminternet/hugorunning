@@ -1,9 +1,9 @@
 # Site settings
 baseurl = "http://janlaeuft.de/"
-languageCode = "en"
-title = "foo bar"
+languageCode = "de"
+title = "Jan läuft!"
 theme = "running"
-paginate = 3
+paginate = 5
 disqusShortname = "janlaeuft"
 [taxonomies]
   category = "categories"
