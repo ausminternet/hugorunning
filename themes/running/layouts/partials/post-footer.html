@@ -1,0 +1,20 @@
+<footer class="post__footer">
+  <div class="share">
+    <h3 class="share__title">Beitrag teilen:</h3>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+      target="_blank"
+      class="share__link share__link--facebook"
+    >
+      Facebook
+    </a>
+    <a href="https://twitter.com/intent/tweet?text={{ .Permalink }} von @ausminternet"
+      target="_blank"
+      class="share__link share__link--twitter"
+    >
+      Twitter
+    </a>
+  </div>
+
+  {{ partial "comments.html" . }}
+
+</footer>

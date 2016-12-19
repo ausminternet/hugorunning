@@ -1,0 +1,31 @@
+.pagination {
+  @include clearfix();
+  
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.pagination__item {
+  display: inline-block;
+  width: 50%;
+}
+
+.pagination__item--next {
+  text-align: right;
+  float:right;
+
+  & .pagination__arrow {
+    margin-left: 0.5rem;
+  }
+}
+
+.pagination__item--prev {
+
+  & .pagination__arrow {
+    margin-right: 0.5rem;
+  }
+}
+
+.pagination__link {
+  @include button();
+}

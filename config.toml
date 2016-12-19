@@ -1,10 +1,11 @@
 # Site settings
-baseurl = "http://localhost:8080/"
+baseurl = "http://192.168.178.30:8080/"
 languageCode = "en"
 title = "foo bar"
-theme = "cactus"
+theme = "running"
+paginate = 3
+disqusShortname = "janlaeuft"
 [taxonomies]
-  categories = "category"
-# paginate = 2
-[permalinks]
-  blog = "/:year/:month/:title/"
+  category = "categories"
+# [permalinks]
+#   blog = "/:year/:month/:title/"

@@ -1,0 +1,29 @@
+.share {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px dashed $color-border;
+  border-top: 1px dashed $color-border;
+}
+
+.share__title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+.share__link {
+  margin-left: 1rem;
+}
+
+.share__link--facebook {
+  @include link-underline($color-facebook);
+
+  color: $color-facebook;
+}
+
+.share__link--twitter {
+  @include link-underline($color-twitter);
+
+  color: $color-twitter;
+}

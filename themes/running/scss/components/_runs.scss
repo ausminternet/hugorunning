@@ -1,0 +1,68 @@
+.runs__title {
+  @include sidebar-title();
+}
+
+.runs__list {
+  @include remove-list-style();
+}
+
+.runs__run {
+  .runs__distance{
+    position: relative;
+
+    &::before,
+    &::after {
+      display: inline-block;
+      position: absolute;
+      top: 2px;
+      right: -13px;
+      content: '';
+      height: 15px;
+      width: 2px;
+      background-color: #cdcdcd;
+    }
+    &::before {
+      transform: rotate(45deg);
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.runs__run.is-done {
+  .runs__distance {
+    display: inline-block;
+    padding-bottom: 2px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after{
+      position: static;
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 12px;
+      background-color: transparent;
+      border: solid #219018;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+.runs__time {
+  margin-left: 0.2rem;
+}
+
+.runs__run--longest {
+  margin-top: 1rem;
+
+  & .runs-distance::before,
+  & .runs-distance::after {
+    display: none;
+  }
+}

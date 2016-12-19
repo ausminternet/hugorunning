@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
-{{ partial "nav.html" . }}
-{{ partial "post.html"  . }}
-{{ template "_internal/disqus.html" . }}
+<main class="main">
+  {{ partial "post.html"  . }}
+</main>
+{{ partial "comment-count-js.html" . }}
 {{ partial "footer.html" . }}

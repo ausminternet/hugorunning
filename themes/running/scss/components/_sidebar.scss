@@ -1,0 +1,15 @@
+.sidebar {
+  border-top: 1px dashed $color-border;
+
+  font-size: 1.4rem;
+
+  @include breakpoint($bp-big) {
+    border-top: none;
+
+    font-size: 1rem;
+  }
+}
+
+.sidebar__item {
+  margin-bottom: 2rem;
+}

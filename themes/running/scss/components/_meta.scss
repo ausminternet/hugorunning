@@ -1,0 +1,11 @@
+.meta__title {
+  @include sidebar-title();
+}
+
+.meta__list {
+  @include remove-list-style();
+}
+
+.meta__link {
+  text-transform: capitalize;
+}

@@ -1,0 +1,11 @@
+.categories__title {
+  @include sidebar-title();
+}
+
+.categories__list {
+  @include remove-list-style();
+}
+
+.categories__link {
+  text-transform: capitalize;
+}

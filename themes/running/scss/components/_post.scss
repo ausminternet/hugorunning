@@ -1,0 +1,77 @@
+.post {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px dashed $color-border;
+  }
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+}
+
+.post__link {
+  margin-bottom: 0.5rem;
+}
+
+.post__title {
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.post__meta {
+  margin: 0;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.post__meta,
+.post__category,
+.post__comment-count {
+  color: $color-meta;
+}
+
+.post__category,
+.post__comment-count {
+  @include link-underline($color-meta);
+}
+
+.post__img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.post__more {
+  @include clearfix();
+
+  margin-top: 1rem;
+}
+
+.post__more-link {
+  @include button();
+
+  float: right;
+}
+
+.post__arrow {
+  margin-left: 0.5rem;
+}
+
+.activate-comments-container {
+  text-align: center;
+}
+
+#activate-comments {
+  @include button();
+
+  width: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  color: $color-link;
+  cursor: pointer;
+
+  @include breakpoint($bp-big) {
+    width: 70%;
+  }
+}

@@ -1,0 +1,21 @@
+.topbar {
+  @include clearfix();
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed $color-border;
+  margin-bottom: 1rem;
+
+  @include breakpoint($bp-big) {
+    display: none;
+  }
+}
+
+.topbar__sidebar-link {
+  @include no-link-underline();
+  float: right;
+}
+
+.topbar__dots::after {
+  content: '\2807';
+  font-size: 2rem;
+  color: #333;
+}

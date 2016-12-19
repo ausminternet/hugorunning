@@ -1,0 +1,31 @@
+.social__title {
+  @include sidebar-title();
+}
+
+.social__list {
+  @include remove-list-style();
+}
+
+.social__link {
+  display: inline-block;
+}
+
+.social__link--feed {
+  @include link-underline($color-feed);
+  color: $color-feed;
+}
+
+.social__link--strava {
+  @include link-underline($color-strava);
+  color: $color-strava;
+}
+
+.social__link--instagram {
+  @include link-underline($color-instagram);
+  color: $color-instagram;
+}
+
+.social__link--twitter {
+  @include link-underline($color-twitter);
+  color: $color-twitter;
+}

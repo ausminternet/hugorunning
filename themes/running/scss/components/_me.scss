@@ -1,0 +1,49 @@
+.me {
+  display: inline-block;
+  float: left;
+
+  @include breakpoint($bp-big) {
+    float: none;
+  }
+}
+
+.me__avatar {
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+
+  @include breakpoint($bp-big) {
+    width: 100px;
+    height: 100px;
+    float: none;
+    display: block;
+  }
+}
+
+.me__sign {
+  height: 50px;
+  margin-left: 1rem;
+  display: inline-block;
+
+  @include breakpoint($bp-big) {
+    width: 100px;
+    height: auto;
+    float: none;
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 0;
+  }
+}
+
+.me__link {
+  @include no-link-underline();
+}
+
+.me--sidebar {
+  display: none;
+
+  @include breakpoint($bp-big) {
+    display: block;
+  }
+}

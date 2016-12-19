@@ -1,0 +1,13 @@
+<section class="categories">
+  <h2 class="categories__title">Kategorien</h2>
+  <ul class="categories__list">
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <li>
+      <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}"
+         class="categories__link">
+        {{ $name }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</section>
