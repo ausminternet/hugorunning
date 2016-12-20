@@ -4,11 +4,11 @@
   </a>
   <p class="post__meta">
     <span class="post__date">{{ .Date.Format "02.01.2006" }}</span>
-    –
+    &#8226;
     {{ with .Params.categories }}
       <a class="post__category" href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}">{{ . }}</a>
     {{ end}}
-    –
+    &#8226;
     <a href="{{ .Permalink }}#disqus_thread" class="post__comment-count">Kommentare</a>
   </p>
   {{ with .Params.thumb }}
