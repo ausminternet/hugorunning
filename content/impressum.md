@@ -19,7 +19,7 @@ E-Mail: <a href="mailto:hallo@janlaeuft.de">hallo@janlaeuft.de</a>
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
 
-Jan Hofmann
+Jan Hofmann  
 Sibeliusweg 7  
 30655 Hannover
 
